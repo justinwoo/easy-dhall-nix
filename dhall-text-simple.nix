@@ -1,7 +1,7 @@
 { pkgs ? import <nixpkgs> {} }:
 
 pkgs.stdenv.mkDerivation rec {
-  name = "dhall-json-simple";
+  name = "dhall-text-simple";
   version = "1.0.14";
   dhall-version = "1.19.1";
 
