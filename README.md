@@ -9,22 +9,22 @@ Derivations for easily downloading Dhall binaries and putting them to use.
 You cn get an appropriate nix-shell with the binaries installed by first testing this with:
 
 ```
-nix-shell -A shell
+nix-shell
 ```
 
 ## Installation
 
 You might choose to simply copy the derivations from this repository, or you can fetch the git/Github repo using the various helpers:
 
-```nix
+```
 > nix repl
 nix-repl> pkgs = import <nixpkgs> {}
 
 nix-repl> drvs = import (pkgs.fetchFromGitHub {
   owner = "justinwoo";
   repo = "easy-dhall-nix";
-  rev = "87406a76409c16bbd7511e397cfc52e1c58954e3";
-  sha256 = "1sjpckyhvlks5yls0qqfd0iaf7pxp1sp3dikqh41lg6xsxx6lqhi";
+  rev = # some REV
+  sha256 = # some SHA
 }) {}
 
 nix-repl> drvs.dhall-simple
