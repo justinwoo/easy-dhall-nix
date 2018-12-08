@@ -1,6 +1,12 @@
 { pkgs ? import <nixpkgs> {} }:
 
-pkgs.stdenv.mkDerivation {
+let easy-dhall = import ./default.nix { inherit pkgs; };
+in pkgs.stdenv.mkDerivation {
   name = "easy-dhall-nix-shell";
-  buildInputs = builtins.attrValues (import ./default.nix { inherit pkgs; });
+  buildInputs = [
+    easy-dhall.dhall-simple
+    easy-dhall.dhall-json-simple
+    easy-dhall.dhall-bash-simple
+    easy-dhall.dhall-text-simple
+  ];
 }
