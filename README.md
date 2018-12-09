@@ -33,4 +33,4 @@ nix-repl> drvs.dhall-simple
 
 ## NixOS: Contributors needed
 
-If you want to use this in NixOS, then please supply some PRs for the appropriate patchelf voodoo.
+The derivations here have been tested by others to work on NixOS. If you have problems, open an issue.
