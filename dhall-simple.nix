@@ -11,6 +11,10 @@ pkgs.stdenv.mkDerivation rec {
 
   installPhase = ''
     mkdir -p $out/bin
-    install -D -m555 -T dhall $out/bin/dhall
+    DHALL=$out/bin/dhall
+    install -D -m555 -T dhall $DHALL
+
+    mkdir -p $out/etc/bash_completion.d/
+    $DHALL --bash-completion-script $DHALL > $out/etc/bash_completion.d/dhall-completion.bash
   '';
 }

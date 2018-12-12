@@ -12,6 +12,10 @@ pkgs.stdenv.mkDerivation rec {
 
   installPhase = ''
     mkdir -p $out/bin
-    install -D -m555 -T dhall-to-text $out/bin/dhall-to-text
+    DHALL_TO_TEXT=$out/bin/dhall-to-text
+    install -D -m555 -T dhall-to-text $DHALL_TO_TEXT
+
+    mkdir -p $out/etc/bash_completion.d/
+    $DHALL_TO_TEXT --bash-completion-script $DHALL_TO_TEXT > $out/etc/bash_completion.d/dhall-to-text-completion.bash
   '';
 }
