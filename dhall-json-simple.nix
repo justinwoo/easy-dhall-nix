@@ -12,7 +12,13 @@ pkgs.stdenv.mkDerivation rec {
 
   installPhase = ''
     mkdir -p $out/bin
-    install -D -m555 -T dhall-to-json $out/bin/dhall-to-json
-    install -D -m555 -T dhall-to-yaml $out/bin/dhall-to-yaml
+    DHALL_TO_JSON=$out/bin/dhall-to-json
+    DHALL_TO_YAML=$out/bin/dhall-to-yaml
+    install -D -m555 -T dhall-to-json $DHALL_TO_JSON
+    install -D -m555 -T dhall-to-yaml $DHALL_TO_YAML
+
+    mkdir -p $out/etc/bash_completion.d/
+    $DHALL_TO_JSON --bash-completion-script $DHALL_TO_JSON > $out/etc/bash_completion.d/dhall-to-json-completion.bash
+    $DHALL_TO_YAML --bash-completion-script $DHALL_TO_YAML > $out/etc/bash_completion.d/dhall-to-yaml-completion.bash
   '';
 }
