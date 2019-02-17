@@ -2,12 +2,11 @@
 
 pkgs.stdenv.mkDerivation rec {
   name = "dhall-bash-simple";
-  version = "1.0.17";
-  dhall-version = "1.19.1";
+  version = "1.20.1";
 
   src = pkgs.fetchurl {
-    url = "https://github.com/dhall-lang/dhall-haskell/releases/download/${dhall-version}/dhall-bash-${version}-x86_64-linux.tar.bz2";
-    sha256 = "1y3rglsdmcbiarwfp907hxdd8swvdsh2874m9m4622ws4avz4v95";
+    url = "https://github.com/dhall-lang/dhall-haskell/releases/download/${version}/dhall-bash-${version}-x86_64-linux.tar.bz2";
+    sha256 = "0vm45pj4iffrdrmf71cfgpim4gdx29r4ddawkhspirjg4hy28m2j";
   };
 
   installPhase = ''
