@@ -5,7 +5,7 @@ pkgs.stdenv.mkDerivation rec {
 
   src = pkgs.fetchurl {
     url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.23.0/dhall-text-1.0.17-x86_64-linux.tar.bz2";
-    sha256 = "0hcfwyig6c1wvyqahmyhb5xkrb4vay2z6vlc1r9is8lbq65n9wyd";
+    sha256 = "1k9q01aswpdxfn868p9ljby32pmaxljmn80xpaana37rwvbghhml";
   };
 
   installPhase = ''

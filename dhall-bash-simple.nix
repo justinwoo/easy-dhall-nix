@@ -5,7 +5,7 @@ pkgs.stdenv.mkDerivation rec {
 
   src = pkgs.fetchurl {
     url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.23.0/dhall-bash-1.0.20-x86_64-linux.tar.bz2";
-    sha256 = "0775d7ws2w5ra4l2vi1ml366w5p1hbbd151343mq0ycd06zgcnbr";
+    sha256 = "1wbfgcz2zb9hk681fqx5gwihkh9l4a0mz79150ka6sn9lywzs87c";
   };
 
   installPhase = ''
