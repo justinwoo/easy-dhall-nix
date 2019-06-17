@@ -4,8 +4,8 @@ pkgs.stdenv.mkDerivation rec {
   name = "dhall-text-simple";
 
   src = pkgs.fetchurl {
-    url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.23.0/dhall-text-1.0.17-x86_64-linux.tar.bz2";
-    sha256 = "1k9q01aswpdxfn868p9ljby32pmaxljmn80xpaana37rwvbghhml";
+    url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.24.0/dhall-text-1.0.18-x86_64-linux.tar.bz2";
+    sha256 = "1d3rdglc9r4iqx207vsm41ka96i7xpa47ffg5z2kbgylf65qrfsa";
   };
 
   installPhase = ''
