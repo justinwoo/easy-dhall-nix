@@ -4,8 +4,8 @@ pkgs.stdenv.mkDerivation rec {
   name = "dhall-json-simple";
 
   src = pkgs.fetchurl {
-    url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.24.0/dhall-json-1.3.0-x86_64-linux.tar.bz2";
-    sha256 = "1hh11yy7smk9dgp1ji7rm2q1ld4gqsdj0w0gpxrybs938h5pzxcm";
+    url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.25.0/dhall-json-1.4.0-x86_64-linux.tar.bz2";
+    sha256 = "14apqq0dj3lmm8yccygf8bb27scxjfkjkmr8zgnwb98znr51gfwn";
   };
 
   installPhase = ''
