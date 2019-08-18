@@ -1,7 +1,5 @@
 # Easy Dhall Nix
 
-[![Build Status](https://travis-ci.org/justinwoo/easy-dhall-nix.svg?branch=master)](https://travis-ci.org/justinwoo/easy-dhall-nix)
-
 Derivations for easily downloading Dhall binaries and putting them to use.
 
 ## Trial

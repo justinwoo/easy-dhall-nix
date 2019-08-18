@@ -1,0 +1,19 @@
+name: My Workflow
+on: [push]
+
+jobs:
+  my_job:
+    name: My Job on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+
+    steps:
+      - uses: actions/checkout@master
+      - name: nix
+        run: |
+          curl https://nixos.org/nix/install | sh
+          . "$HOME"/.nix-profile/etc/profile.d/nix.sh
+          ./test.bash

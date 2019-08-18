@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+#!/usr/bin/env nix-shell
+#!nix-shell -i bash
 
 ERRORS=0;
 
@@ -14,8 +15,6 @@ function test_exe () {
 }
 
 test_exe dhall;
-test_exe dhall-to-json;
-test_exe dhall-to-yaml;
 test_exe dhall-to-bash;
 
 exit $ERRORS;
