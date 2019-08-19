@@ -15,6 +15,7 @@ function test_exe () {
 }
 
 test_exe dhall;
+test_exe dhall-to-json;
 test_exe dhall-to-bash;
 
 exit $ERRORS;
