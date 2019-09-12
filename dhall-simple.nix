@@ -2,15 +2,16 @@
 
 pkgs.stdenv.mkDerivation rec {
   name = "dhall-simple";
+
   src = if pkgs.stdenv.isDarwin
-    then pkgs.fetchurl {
-      url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.25.0/dhall-1.25.0-x86_64-macos.tar.bz2";
-      sha256 = "1ar1wh0kp1fn0xbr60b61bkj4q3bd2k0df6lgzyqngbjackx2yn2";
-    }
-    else pkgs.fetchurl {
-      url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.25.0/dhall-1.25.0-x86_64-linux.tar.bz2";
-      sha256 = "12w2549mx4js7dz4qjcrps6nivj37ikg3daybl5fskshdyf44ia7";
-    };
+  then pkgs.fetchurl {
+    url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.26.0/dhall-1.26.0-x86_64-macos.tar.bz2";
+    sha256 = "0jy9bwgywqwb7nk1qhpqhi56g7fsk8vhzybwxb8h07qcm47wa6vw";
+  }
+  else pkgs.fetchurl {
+    url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.26.0/dhall-1.26.0-x86_64-linux.tar.bz2";
+    sha256 = "0q6zdkf1grzj1hblx1ngdfss41bisl7a3fz9xl9zz229s7n5grq5";
+  };
 
   installPhase = ''
     mkdir -p $out/bin
