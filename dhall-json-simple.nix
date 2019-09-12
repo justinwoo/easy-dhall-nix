@@ -4,14 +4,14 @@ pkgs.stdenv.mkDerivation rec {
   name = "dhall-json-simple";
 
   src = if pkgs.stdenv.isDarwin
-    then pkgs.fetchurl {
-      url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.25.0/dhall-json-1.4.0-x86_64-macos.tar.bz2";
-      sha256 = "0427xy59mzyrz978l36x0ha610bpckg14m3svkvg8hipvblgh19r";
-    }
-    else pkgs.fetchurl {
-      url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.25.0/dhall-json-1.4.0-x86_64-linux.tar.bz2";
-      sha256 = "14apqq0dj3lmm8yccygf8bb27scxjfkjkmr8zgnwb98znr51gfwn";
-    };
+  then pkgs.fetchurl {
+    url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.26.0/dhall-json-1.4.1-x86_64-macos.tar.bz2";
+    sha256 = "1m5cw6b9xhr9qi55ih3dvkj7vzmh9jpswfqdadmw4r6rgsia8jg1";
+  }
+  else pkgs.fetchurl {
+    url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.26.0/dhall-json-1.4.1-x86_64-linux.tar.bz2";
+    sha256 = "0hv5x8ps0z74acsh91ivlg5vw7r0c8p0g92ca1mxm7m4p4vf936k";
+  };
 
   installPhase = ''
     mkdir -p $out/bin
