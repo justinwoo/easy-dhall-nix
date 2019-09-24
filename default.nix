@@ -12,4 +12,8 @@
   dhall-bash-simple = import ./dhall-bash-simple.nix {
     inherit pkgs;
   };
+
+  dhall-nix-simple = import ./dhall-nix-simple.nix {
+    inherit pkgs;
+  };
 }
