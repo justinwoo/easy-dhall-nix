@@ -17,6 +17,10 @@ function test_exe () {
 test_exe dhall;
 test_exe dhall-to-json;
 test_exe dhall-to-bash;
-test_exe dhall-to-nix;
+
+if [[ "$OSTYPE" != "darwin"* ]]
+then
+  test_exe dhall-to-nix;
+fi
 
 exit $ERRORS;
