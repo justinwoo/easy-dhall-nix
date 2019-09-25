@@ -1,17 +1,16 @@
 let
   pkgs = import ./nixpkgs.nix {};
-  default = import ./default.nix { inherit pkgs; };
+
+  default = import ./default.nix {
+    inherit pkgs;
+  };
 
 in
-  with default;
-  pkgs.mkShell {
+  with default; pkgs.mkShell {
     buildInputs = [
       dhall-simple
       dhall-json-simple
       dhall-bash-simple
-    ] ++ (
-      if pkgs.stdenv.isDarwin then [] else [
-        dhall-nix-simple
-      ]
-    );
+      dhall-nix-simple
+    ];
   }
