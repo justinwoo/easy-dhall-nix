@@ -5,12 +5,12 @@ pkgs.stdenv.mkDerivation rec {
 
   src = if pkgs.stdenv.isDarwin
   then pkgs.fetchurl {
-    url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.26.1/dhall-nix-1.1.8-x86_64-macos.tar.bz2";
-    sha256 = "0dgg5iljf8crx5vas8v5lz79h5kk4ss6vg1ngavs32vshzs9q9kc";
+    url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.27.0/dhall-nix-1.1.9-x86_64-macos.tar.bz2";
+    sha256 = "0mhbcs9wbv1fdgzvqb71d8621kci6yqwhip1hbslhdxnm7z4p8rr";
   }
   else pkgs.fetchurl {
-    url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.26.1/dhall-nix-1.1.8-x86_64-linux.tar.bz2";
-    sha256 = "1mqkk598xx4hbpq9az9biwzc4gwmxb98wjm2ss0agvpdr75w5xm4";
+    url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.27.0/dhall-nix-1.1.9-x86_64-linux.tar.bz2";
+    sha256 = "0n3fh7azr7avr8g73rg7csiacl1qgs9kf7j17q5a9bwwbqqid5k1";
   };
 
   installPhase = ''
