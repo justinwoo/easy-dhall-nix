@@ -5,12 +5,12 @@ pkgs.stdenv.mkDerivation rec {
 
   src = if pkgs.stdenv.isDarwin
   then pkgs.fetchurl {
-    url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.26.1/dhall-json-1.4.1-x86_64-macos.tar.bz2";
-    sha256 = "147cbc5fw6iaynmyz4iz5r9bmq7kldhjvzj6pa4l10i4asal7da1";
+    url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.27.0/dhall-json-1.5.0-x86_64-macos.tar.bz2";
+    sha256 = "0gxbxnfzhj2q1q64yjiz64vqblka5x52g491dhnsh80g59f9zb6j";
   }
   else pkgs.fetchurl {
-    url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.26.1/dhall-json-1.4.1-x86_64-linux.tar.bz2";
-    sha256 = "1hpd3rwpawwgpb5v2ib5hnsl1jbw4p109hhd6qhi2fc8rd7g5s89";
+    url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.27.0/dhall-json-1.5.0-x86_64-linux.tar.bz2";
+    sha256 = "0anccnsl350w0xw2nacacma0lvnpx9dfwrsc3lxvlcg7v1nf1mpq";
   };
 
   installPhase = ''
