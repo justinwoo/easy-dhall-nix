@@ -18,5 +18,6 @@ test_exe dhall;
 test_exe dhall-to-json;
 test_exe dhall-to-bash;
 test_exe dhall-to-nix;
+test_exe dhall-to-yaml;
 
 exit $ERRORS;

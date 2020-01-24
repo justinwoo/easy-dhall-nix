@@ -12,5 +12,6 @@ in
       dhall-json-simple
       dhall-bash-simple
       dhall-nix-simple
+      dhall-yaml-simple
     ];
   }
