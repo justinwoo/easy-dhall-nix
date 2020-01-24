@@ -16,4 +16,8 @@
   dhall-nix-simple = import ./dhall-nix-simple.nix {
     inherit pkgs;
   };
+
+  dhall-yaml-simple = import ./dhall-yaml-simple.nix {
+    inherit pkgs;
+  };
 }
