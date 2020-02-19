@@ -5,12 +5,12 @@ pkgs.stdenv.mkDerivation rec {
 
   src = if pkgs.stdenv.isDarwin
   then pkgs.fetchurl {
-    url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.29.0/dhall-1.29.0-x86_64-macos.tar.bz2";
-    sha256 = "0liqfhvwbpjykrcd547f6814zzgc4rhilfk42jr0h24557ivcfj6";
+    url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.30.0/dhall-1.30.0-x86_64-macos.tar.bz2";
+    sha256 = "03s4fj7i3jvnjk3faiqd77g46xxyj85i10jxrv2nvgy14kmx11cr";
   }
   else pkgs.fetchurl {
-    url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.29.0/dhall-1.29.0-x86_64-linux.tar.bz2";
-    sha256 = "1lamg0vli5r9lshxg40nysirvn264hk3w9zk7hcar6lihcxdnwz2";
+    url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.30.0/dhall-1.30.0-x86_64-linux.tar.bz2";
+    sha256 = "00llrslfvlihfzryfvh8z2dz93nz1327h4ha2ks41k63x4fl4ib8";
   };
 
   installPhase = ''
