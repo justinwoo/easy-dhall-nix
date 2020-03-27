@@ -20,4 +20,8 @@
   dhall-yaml-simple = import ./dhall-yaml-simple.nix {
     inherit pkgs;
   };
+
+  dhall-lsp-simple = import ./dhall-lsp-simple.nix {
+    inherit pkgs;
+  };
 }
