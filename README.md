@@ -32,3 +32,14 @@ nix-repl> drvs.dhall-simple
 ## NixOS: Contributors needed
 
 The derivations here have been tested by others to work on NixOS. If you have problems, open an issue.
+
+## Update this repository
+
+To update, run
+
+```
+./fetch.py
+```
+
+from the root of this repository.
+It will prefetch the binaries from the latest dhall release on Github.

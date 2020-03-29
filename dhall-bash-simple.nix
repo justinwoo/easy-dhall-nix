@@ -1,16 +1,20 @@
 { pkgs ? import <nixpkgs> {} }:
 
+let
+  release = import ./release.nix;
+in
+
 pkgs.stdenv.mkDerivation rec {
   name = "dhall-bash-simple";
 
   src = if pkgs.stdenv.isDarwin
   then pkgs.fetchurl {
-    url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.30.0/dhall-bash-1.0.28-x86_64-macos.tar.bz2";
-    sha256 = "1flzfjb9qxphpgzpp9acpgxdylkn97zbrw6f3lbz6rnb2k7sc8b5";
+    url = release.dhall-bash-darwin.url;
+    sha256 = release.dhall-bash-darwin.hash;
   }
   else pkgs.fetchurl {
-    url = "https://github.com/dhall-lang/dhall-haskell/releases/download/1.30.0/dhall-bash-1.0.28-x86_64-linux.tar.bz2";
-    sha256 = "0v377zbna1m7mphgzmibbs35k3bshx22iwvnyciwryl9x2hglbsg";
+    url = release.dhall-bash-linux.url;
+    sha256 = release.dhall-bash-linux.hash;
   };
 
   installPhase = ''
