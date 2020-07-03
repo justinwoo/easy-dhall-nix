@@ -1,5 +1,8 @@
 name: My Workflow
-on: [push]
+
+on:
+  pull_request:
+  push:
 
 jobs:
   my_job:
@@ -11,9 +14,6 @@ jobs:
         os: [ubuntu-latest]
 
     steps:
-      - uses: actions/checkout@master
-      - name: nix
-        run: |
-          curl https://nixos.org/nix/install | sh
-          . "$HOME"/.nix-profile/etc/profile.d/nix.sh
-          ./test.bash
+      - uses: actions/checkout@v2
+      - uses: cachix/install-nix-action@v9
+      - run: ./tests.bash
