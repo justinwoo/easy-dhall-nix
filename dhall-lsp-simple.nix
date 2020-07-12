@@ -8,11 +8,11 @@ pkgs.stdenv.mkDerivation rec {
   name = "dhall-lsp-simple";
 
   src = if pkgs.stdenv.isDarwin
-  then pkgs.fetchurl {
+  then pkgs.fetchzip {
     url = release.dhall-lsp-server-darwin.url;
     sha256 = release.dhall-lsp-server-darwin.hash;
   }
-  else pkgs.fetchurl {
+  else pkgs.fetchzip {
     url = release.dhall-lsp-server-linux.url;
     sha256 = release.dhall-lsp-server-linux.hash;
   };

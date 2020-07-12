@@ -8,11 +8,11 @@ pkgs.stdenv.mkDerivation rec {
   name = "dhall-json-simple";
 
   src = if pkgs.stdenv.isDarwin
-  then pkgs.fetchurl {
+  then pkgs.fetchzip {
     url = release.dhall-json-darwin.url;
     sha256 = release.dhall-json-darwin.hash;
     }
-  else pkgs.fetchurl {
+  else pkgs.fetchzip {
     url = release.dhall-json-linux.url;
     sha256 = release.dhall-json-linux.hash;
   };
