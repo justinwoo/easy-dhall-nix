@@ -2,61 +2,61 @@
   "dhall-linux": {
     "name": "dhall-1.33.1-x86_64-linux.tar.bz2",
     "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.33.1/dhall-1.33.1-x86_64-linux.tar.bz2",
-    "hash": "02gnhkphsjk0qzr8k0lqjxcn7lqkrp27gybi7mkg1s92zgj7643f"
+    "hash": "1790lxfnqh0wisqksvmfxxcm3yfzd04qhdbyvzlcpwwn2mzdn6bp"
   },
   "dhall-darwin": {
     "name": "dhall-1.33.1-x86_64-macos.tar.bz2",
     "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.33.1/dhall-1.33.1-x86_64-macos.tar.bz2",
-    "hash": "07gkfx0fb9975m6x6pvw63llxqpk7nblnvvaph7adyj1vlvmsbza"
+    "hash": "0z3mi9mqnnj4r4rfcqs8r3v9sd3wmk37f23ff6iyznv16303s61g"
   },
   "dhall-bash-linux": {
     "name": "dhall-bash-1.0.31-x86_64-linux.tar.bz2",
     "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.33.1/dhall-bash-1.0.31-x86_64-linux.tar.bz2",
-    "hash": "0hhx7948ljg39qxzrgicx5r6ba20ir22s5gjxdc85irbllrvx2j6"
+    "hash": "1l0ry39vvmn0ync0zfwk951wdinrg82fl7r0c8cyv2c7w1z2skzz"
   },
   "dhall-bash-darwin": {
     "name": "dhall-bash-1.0.31-x86_64-macos.tar.bz2",
     "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.33.1/dhall-bash-1.0.31-x86_64-macos.tar.bz2",
-    "hash": "14nbphx9rw95c8s4b198y8s0fyky27y3rfanyhnsx8rlw9s3fd9n"
+    "hash": "1f8557hl3nadx5wbm07ba7x3a95dfl5py5dipvpm93lp4nxm6icm"
   },
   "dhall-json-linux": {
     "name": "dhall-json-1.7.0-x86_64-linux.tar.bz2",
     "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.33.1/dhall-json-1.7.0-x86_64-linux.tar.bz2",
-    "hash": "1v2ss7fz3prmm4riv9fdcwpphgk56nj8kdc3c6ca6d9d947cg7yc"
+    "hash": "1rahjjkpih3qhhqcwdd632p2vd9h53lihpcw62sy26i71scy8iih"
   },
   "dhall-json-darwin": {
     "name": "dhall-json-1.7.0-x86_64-macos.tar.bz2",
     "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.33.1/dhall-json-1.7.0-x86_64-macos.tar.bz2",
-    "hash": "0z684x9gaz2k5sl87r8xw9l7hm0hif4yn44mca8a6fb28sgf5f48"
+    "hash": "1gd6lpjwk1by25v282gm5x3srvqw2hk6zflfgp4g288chrvnisqv"
   },
   "dhall-lsp-server-linux": {
     "name": "dhall-lsp-server-1.0.8-x86_64-linux.tar.bz2",
     "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.33.1/dhall-lsp-server-1.0.8-x86_64-linux.tar.bz2",
-    "hash": "0pnsf811cpy74s147i0ww7d3b8k03q83ims6q7ii1nam3cigk089"
+    "hash": "04ipl3n7azrz3cngk1hfpkcgrk3djlwyypds7pnld4b4f66kjxbw"
   },
   "dhall-lsp-server-darwin": {
     "name": "dhall-lsp-server-1.0.8-x86_64-macos.tar.bz2",
     "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.33.1/dhall-lsp-server-1.0.8-x86_64-macos.tar.bz2",
-    "hash": "1fnhz2f3r17qf8lahk3isc9g094simjviigwcm1dmkxmb14lk0ac"
+    "hash": "14s6bpfji3bcz1m708zpiscmrlj4zzxmd3h0ighk9q90ka93v2ws"
   },
   "dhall-nix-linux": {
     "name": "dhall-nix-1.1.15-x86_64-linux.tar.bz2",
     "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.33.1/dhall-nix-1.1.15-x86_64-linux.tar.bz2",
-    "hash": "1klfh2hvz62sfdhaxhb5k8qwb6rs64gd3hch2mjz9hjbnza23bk2"
+    "hash": "0r0q30ppgypgzc9a32zr65ql3q0a6i6889h4p2vgm6ra04h78qx1"
   },
   "dhall-nix-darwin": {
     "name": "dhall-nix-1.1.15-x86_64-macos.tar.bz2",
     "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.33.1/dhall-nix-1.1.15-x86_64-macos.tar.bz2",
-    "hash": "0q1lq78cscdwg9in173z7yqkdk1zslhygj02z2yyfqypad59a1rh"
+    "hash": "1hyjcy2p3zwlnb4jdsg6cpp1p5p6510zhpaf87dq6by0s5hs5rbz"
   },
   "dhall-yaml-linux": {
     "name": "dhall-yaml-1.2.0-x86_64-linux.tar.bz2",
     "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.33.1/dhall-yaml-1.2.0-x86_64-linux.tar.bz2",
-    "hash": "0mnqn6by839v1n2ccb33qxdh7jga0x5xq3kkwdsnic6q7fgcsds6"
+    "hash": "0y5qqv6hw9akv0lqyw3cax7jf2mmwkqr1kasxwcnsimqn7a5m5ib"
   },
   "dhall-yaml-darwin": {
     "name": "dhall-yaml-1.2.0-x86_64-macos.tar.bz2",
     "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.33.1/dhall-yaml-1.2.0-x86_64-macos.tar.bz2",
-    "hash": "0sv2024rjlycnp2kjfb8y72h6ilfsb475q2pf387aq6y314mlj5w"
+    "hash": "1m2dq17xclr61hl5d0laqwqwjqwcwql9ga6q5xpl9kv2bx5cm8pm"
   }
 }

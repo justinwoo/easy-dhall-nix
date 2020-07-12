@@ -8,11 +8,11 @@ pkgs.stdenv.mkDerivation rec {
   name = "dhall-bash-simple";
 
   src = if pkgs.stdenv.isDarwin
-  then pkgs.fetchurl {
+  then pkgs.fetchzip {
     url = release.dhall-bash-darwin.url;
     sha256 = release.dhall-bash-darwin.hash;
   }
-  else pkgs.fetchurl {
+  else pkgs.fetchzip {
     url = release.dhall-bash-linux.url;
     sha256 = release.dhall-bash-linux.hash;
   };

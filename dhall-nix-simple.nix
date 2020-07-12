@@ -8,11 +8,11 @@ pkgs.stdenv.mkDerivation rec {
   name = "dhall-nix-simple";
 
   src = if pkgs.stdenv.isDarwin
-  then pkgs.fetchurl {
+  then pkgs.fetchzip {
     url = release.dhall-nix-darwin.url;
     sha256 = release.dhall-nix-darwin.hash;
   }
-  else pkgs.fetchurl {
+  else pkgs.fetchzip {
     url = release.dhall-nix-linux.url;
     sha256 = release.dhall-nix-linux.hash;
   };

@@ -8,11 +8,11 @@ pkgs.stdenv.mkDerivation rec {
   name = "dhall-yaml-simple";
 
   src = if pkgs.stdenv.isDarwin
-  then pkgs.fetchurl {
+  then pkgs.fetchzip {
     url = release.dhall-yaml-darwin.url;
     sha256 = release.dhall-yaml-darwin.hash;
   }
-  else pkgs.fetchurl {
+  else pkgs.fetchzip {
     url = release.dhall-yaml-linux.url;
     sha256 = release.dhall-yaml-linux.hash;
   };
