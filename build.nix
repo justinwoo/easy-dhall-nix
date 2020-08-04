@@ -19,12 +19,18 @@ pkgs.stdenv.mkDerivation rec {
     sha256 = release.${"${attrName}-linux"}.hash;
   };
 
+  nativeBuildInputs = [ pkgs.installShellFiles ];
+
   installPhase = ''
     mkdir -p $out/bin
     binPath="$out/bin/${binName}"
     install -D -m555 -T ${binName} "$binPath"
 
-    mkdir -p $out/etc/bash_completion.d/
-    "$binPath" --bash-completion-script "$binPath" > "$out/etc/bash_completion.d/${binName}-completion.bash"
+    "$binPath" --bash-completion-script "$binPath" > "${binName}.bash"
+    installShellCompletion --bash "${binName}.bash"
+    "$binPath" --zsh-completion-script "$binPath" > "${binName}.zsh"
+    installShellCompletion --zsh "${binName}.zsh"
+    "$binPath" --fish-completion-script "$binPath" > "${binName}.fish"
+    installShellCompletion --fish "${binName}.fish"
   '';
 }
