@@ -2,6 +2,6 @@
 
 import ./build.nix { inherit pkgs; release = import ./release.nix; } {
   simpleName = "dhall-simple";
-  binName = "dhall";
+  binNames = [ "dhall" ];
   attrName = "dhall";
 }
