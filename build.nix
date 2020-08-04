@@ -1,6 +1,6 @@
 { pkgs, release }:
 
-{ simpleName, binName, attrName, completionName ? binName }:
+{ simpleName, binName, attrName }:
 
 let
   release = import ./release.nix;
@@ -25,6 +25,6 @@ pkgs.stdenv.mkDerivation rec {
     install -D -m555 -T ${binName} "$binPath"
 
     mkdir -p $out/etc/bash_completion.d/
-    "$binPath" --bash-completion-script "$binPath" > "$out/etc/bash_completion.d/${completionName}-completion.bash"
+    "$binPath" --bash-completion-script "$binPath" > "$out/etc/bash_completion.d/${binName}-completion.bash"
   '';
 }
