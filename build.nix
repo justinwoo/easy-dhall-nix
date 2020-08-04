@@ -24,7 +24,15 @@ pkgs.stdenv.mkDerivation rec {
   installPhase = ''
     mkdir -p $out/bin
     binPath="$out/bin/${binName}"
-    install -D -m555 -T ${binName} "$binPath"
+    install -D -m555 -T "${binName}" "$binPath"
+    rm "${binName}"
+
+    # check that we didn’t forget any files (maybe a new binary was added)
+    if [ ! -z "$(${pkgs.lr}/bin/lr -1 -t 'depth == 1' .)" ]; then
+      echo "still some files remaining!" >&2
+      ${pkgs.lr}/bin/lr .
+      exit 1
+    fi
 
     "$binPath" --bash-completion-script "$binPath" > "${binName}.bash"
     installShellCompletion --bash "${binName}.bash"
