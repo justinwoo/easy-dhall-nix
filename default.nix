@@ -24,4 +24,8 @@
   dhall-lsp-simple = import ./dhall-lsp-simple.nix {
     inherit pkgs;
   };
+
+  dhall-docs-simple = import ./dhall-docs-simple.nix {
+    inherit pkgs;
+  };
 }
