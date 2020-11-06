@@ -21,6 +21,8 @@ pkgs.stdenv.mkDerivation rec {
 
   nativeBuildInputs = [ pkgs.installShellFiles ];
 
+  passthru.binNames = binNames;
+
   installPhase = ''
     mkdir -p $out/bin
 
