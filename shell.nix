@@ -13,5 +13,7 @@ in
       dhall-bash-simple
       dhall-nix-simple
       dhall-yaml-simple
+      dhall-lsp-simple
+      dhall-docs-simple
     ];
   }

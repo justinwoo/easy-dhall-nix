@@ -19,5 +19,7 @@ test_exe dhall-to-json;
 test_exe dhall-to-bash;
 test_exe dhall-to-nix;
 test_exe dhall-to-yaml-ng;
+test_exe dhall-docs;
+test_exe dhall-lsp-server;
 
 exit $ERRORS;
