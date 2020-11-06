@@ -4,7 +4,7 @@ Derivations for easily downloading Dhall binaries and putting them to use.
 
 ## Trial
 
-You cn get an appropriate nix-shell with the binaries installed by first testing this with:
+You can get an appropriate nix-shell with the binaries installed by first testing this with:
 
 ```
 nix-shell
