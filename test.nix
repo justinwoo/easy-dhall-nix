@@ -16,12 +16,12 @@ let
 
     test_exe () {
       EXE=$1;
-      LOCATION=$(command -v "$EXE");
-      if [ -x "$LOCATION" ]; then
-        echo "found $EXE";
+      echo "$EXE --version:"
+      if $EXE --version; then
+        return 0
       else
-        echo "didnt find $EXE";
-        ERRORS=1;
+        echo "$EXE --version failed!"
+        ERRORS=1
       fi
     }
 
