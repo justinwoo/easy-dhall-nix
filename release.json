@@ -37,7 +37,7 @@
   "dhall-json-darwin": {
     "name": "dhall-json-1.7.3-x86_64-macos.tar.bz2",
     "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.36.0/dhall-json-1.7.3-x86_64-macos.tar.bz2",
-    "hash": "0ms569z3a4jnnmqw8j6jgj1dwsa42jz39gbfx6aqvywmdh1dgrsg"
+    "hash": "sha256-JX/9SpE/6KBNx/z2DINJonWqjpS/m8GnpBHXxUvIti8"
   },
   "dhall-lsp-server-linux": {
     "name": "dhall-lsp-server-1.0.11-x86_64-linux.tar.bz2",
@@ -47,7 +47,7 @@
   "dhall-lsp-server-darwin": {
     "name": "dhall-lsp-server-1.0.11-x86_64-macos.tar.bz2",
     "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.36.0/dhall-lsp-server-1.0.11-x86_64-macos.tar.bz2",
-    "hash": "1zhbay382wskwf1jflvh7k73ip9gnk7v84b6x9fmvclmp0nqjjvp"
+    "hash": "sha256-QllqI728IT3bHiVWTr/rACwexWJS4gNYjjKS9nALF+o="
   },
   "dhall-nix-linux": {
     "name": "dhall-nix-1.1.18-x86_64-linux.tar.bz2",
@@ -72,6 +72,6 @@
   "dhall-yaml-darwin": {
     "name": "dhall-yaml-1.2.3-x86_64-macos.tar.bz2",
     "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.36.0/dhall-yaml-1.2.3-x86_64-macos.tar.bz2",
-    "hash": "1hxqbhrznzd043xp1sys8dg6s4y0vss345023869n1vn3czzxn1f"
+    "hash": "sha256-7+6/GgQqUAmNY+eCRKUAnZMQ0sUPozKVmXUSplVIxKw="
   }
 }

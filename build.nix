@@ -4,6 +4,7 @@
 
 let
   release = import ./release.nix;
+  darwinString = pkgs.lib.optionalString pkgs.stdenv.isDarwin;
 in
 
 pkgs.stdenv.mkDerivation rec {
@@ -13,6 +14,7 @@ pkgs.stdenv.mkDerivation rec {
   then pkgs.fetchzip {
     url = release.${"${attrName}-darwin"}.url;
     sha256 = release.${"${attrName}-darwin"}.hash;
+    stripRoot = false;
   }
   else pkgs.fetchzip {
     url = release.${"${attrName}-linux"}.url;
@@ -23,7 +25,10 @@ pkgs.stdenv.mkDerivation rec {
 
   passthru.binNames = binNames;
 
-  installPhase = ''
+  installPhase = darwinString ''
+    find . -type f -exec mv -t . {} + || true
+    find . -empty -type d -delete
+  '' + ''
     mkdir -p $out/bin
 
     ${pkgs.lib.concatMapStringsSep "\n" (binName: ''
@@ -40,8 +45,12 @@ pkgs.stdenv.mkDerivation rec {
         "$binPath" --fish-completion-script "$binPath" > "${binName}.fish"
         installShellCompletion --fish "${binName}.fish"
         rm "${binName}.fish"
+      '' + darwinString ''
+         if test -f "${binName}.1"; then
+           installManPage ${binName}.1
+           rm ${binName}.1
+         fi
       '') binNames}
-
     # check that we didn’t forget any files (maybe a new binary was added)
     if [ ! -z "$(${pkgs.lr}/bin/lr -1 -t 'depth == 1' .)" ]; then
       echo "still some files remaining!" >&2
