@@ -1,6 +1,6 @@
 { pkgs, release }:
 
-{ simpleName, binNames, attrName }:
+{ simpleName, binNames, attrName, manPages ? [] }:
 
 let
   release = import ./release.nix;
@@ -45,6 +45,16 @@ pkgs.stdenv.mkDerivation rec {
       '') binNames}
 
     rmdir bin
+
+    ${pkgs.lib.optionalString (manPages != []) ''
+        ${pkgs.lib.concatMapStringsSep "\n" (manPage: ''
+          # TODO: split into $man output
+          manPagePath="$out/share/man/man1/${manPage}"
+          install -D -m644 -T "share/man/man1/${manPage}" "$manPagePath"
+          rm "share/man/man1/${manPage}"
+        '') manPages}
+        rmdir --parent share/man/man1
+     ''}
 
     # a bit hacky, but sourceRoot unfortunately unpacks to the runtime build dir
     rm env-vars .sandbox.sb || true
