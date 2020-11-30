@@ -23,13 +23,15 @@ pkgs.stdenv.mkDerivation rec {
 
   passthru.binNames = binNames;
 
+  sourceRoot = ".";
+
   installPhase = ''
     mkdir -p $out/bin
 
     ${pkgs.lib.concatMapStringsSep "\n" (binName: ''
         binPath="$out/bin/${binName}"
-        install -D -m555 -T "${binName}" "$binPath"
-        rm "${binName}"
+        install -D -m555 -T "bin/${binName}" "$binPath"
+        rm "bin/${binName}"
 
         "$binPath" --bash-completion-script "$binPath" > "${binName}.bash"
         installShellCompletion --bash "${binName}.bash"
@@ -41,6 +43,11 @@ pkgs.stdenv.mkDerivation rec {
         installShellCompletion --fish "${binName}.fish"
         rm "${binName}.fish"
       '') binNames}
+
+    rmdir bin
+
+    # a bit hacky, but sourceRoot unfortunately unpacks to the runtime build dir
+    rm env-vars .sandbox.sb || true
 
     # check that we didn’t forget any files (maybe a new binary was added)
     if [ ! -z "$(${pkgs.lr}/bin/lr -1 -t 'depth == 1' .)" ]; then
