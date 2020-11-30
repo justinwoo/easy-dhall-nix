@@ -16,14 +16,14 @@ You might choose to simply copy the derivations from this repository, or you can
 
 ```
 > nix repl
-nix-repl> pkgs = import <nixpkgs> {}
+nix-repl> pkgs = import ./nixpkgs.nix {}
 
 nix-repl> drvs = import (pkgs.fetchFromGitHub {
   owner = "justinwoo";
   repo = "easy-dhall-nix";
   rev = # some REV
   sha256 = # some SHA
-}) {}
+}) { inherit pkgs; }
 
 nix-repl> drvs.dhall-simple
 «derivation /nix/store/qz29jbplpmlvsbmq05084dh1fbs8sl0h-dhall-simple.drv»
