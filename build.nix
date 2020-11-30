@@ -10,11 +10,11 @@ pkgs.stdenv.mkDerivation rec {
   name = simpleName;
 
   src = if pkgs.stdenv.isDarwin
-  then pkgs.fetchzip {
+  then pkgs.fetchurl {
     url = release.${"${attrName}-darwin"}.url;
     sha256 = release.${"${attrName}-darwin"}.hash;
   }
-  else pkgs.fetchzip {
+  else pkgs.fetchurl {
     url = release.${"${attrName}-linux"}.url;
     sha256 = release.${"${attrName}-linux"}.hash;
   };
