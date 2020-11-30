@@ -1,5 +1,5 @@
 #!/usr/bin/env nix-shell
-#!nix-shell -i python3 -p python3 curl nix
+#!nix-shell -I nixpkgs=./nixpkgs.nix -i python3 -p python3 curl nix
 
 import json
 import re
