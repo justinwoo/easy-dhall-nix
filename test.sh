@@ -1,4 +1,8 @@
 #!/usr/bin/env sh
 set -e
-test_script="$(nix-build ./test.nix)"
-exec "$test_script"
+tmp="$(mktemp -d)"
+trap "rm -r $tmp" EXIT
+nix-build \
+    --out-link "$tmp"/result \
+    ./test.nix
+"$tmp/result"
