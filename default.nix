@@ -1,4 +1,4 @@
-{ pkgs ? import <nixpkgs> {} }:
+{ pkgs ? import ./nixpkgs.nix {} }:
 
 {
   dhall-simple = import ./dhall-simple.nix {
