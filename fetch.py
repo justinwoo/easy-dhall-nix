@@ -41,7 +41,7 @@ def prefetch_binaries(release):
         if "linux" in a['name'] or "macos" in a['name']:
             print(a['name'], file=sys.stderr)
             hash = sub.check_output([
-                "nix-prefetch-url", '--unpack', a['browser_download_url']
+                "nix-prefetch-url", a['browser_download_url']
             ]).strip().decode()
             res += [{
                 'name': a['name'],
