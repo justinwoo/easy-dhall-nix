@@ -46,6 +46,16 @@ pkgs.stdenv.mkDerivation rec {
 
     rmdir bin
 
+    # https://github.com/dhall-lang/dhall-haskell/issues/2161
+    rm share/man/dhall-docs.1 \
+       share/man/dhall-docs.md \
+       share/man/gen-manpage.sh \
+       && rmdir share/man && rmdir share \
+       || true
+    rm share/man/dhall.1 \
+       share/man/dhall.md \
+       && rmdir share/man && rmdir share \
+       || true
     ${pkgs.lib.optionalString (manPages != []) ''
         ${pkgs.lib.concatMapStringsSep "\n" (manPage: ''
           # TODO: split into $man output
