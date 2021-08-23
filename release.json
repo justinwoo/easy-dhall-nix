@@ -1,87 +1,107 @@
 {
   "dhall-linux": {
-    "name": "dhall-1.39.0-x86_64-linux.tar.bz2",
-    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.39.0/dhall-1.39.0-x86_64-linux.tar.bz2",
-    "hash": "11bz6ggbfp0np936xr7hsla4yqsd4a5p8nwdh6f7k52ffp02ii8w"
+    "name": "dhall-1.40.0-x86_64-linux.tar.bz2",
+    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.40.0/dhall-1.40.0-x86_64-linux.tar.bz2",
+    "hash": "1zj7rxfyslla6y904i5rdl2l835fizpzjr5cg2d0ilr0nn2zi353"
   },
   "dhall-darwin": {
-    "name": "dhall-1.39.0-x86_64-macos.tar.bz2",
-    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.39.0/dhall-1.39.0-x86_64-macos.tar.bz2",
-    "hash": "0zmszh5iacsg9sf6qpgnx99vrkmncgsvnwvsjzbj9cwym8p4l7x6"
+    "name": "dhall-1.40.0-x86_64-macos.tar.bz2.zip",
+    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.40.0/dhall-1.40.0-x86_64-macos.tar.bz2.zip",
+    "hash": "1j8xa6gjgksjadz6znqfg6a624alp9mjhz4lgyyh9xhlrllzrs0q"
   },
   "dhall-bash-linux": {
-    "name": "dhall-bash-1.0.37-x86_64-linux.tar.bz2",
-    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.39.0/dhall-bash-1.0.37-x86_64-linux.tar.bz2",
-    "hash": "14jn8y36daa6s1kvdq1xqw9fxji10p463pxqjkagah9iny6v791f"
+    "name": "dhall-bash-1.0.38-x86_64-linux.tar.bz2",
+    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.40.0/dhall-bash-1.0.38-x86_64-linux.tar.bz2",
+    "hash": "180iqpl0cfk7gr0v9bq0bw46bglwcdf0p4mydcddrjjac7r4n29i"
   },
   "dhall-bash-darwin": {
-    "name": "dhall-bash-1.0.37-x86_64-macos.tar.bz2",
-    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.39.0/dhall-bash-1.0.37-x86_64-macos.tar.bz2",
-    "hash": "16kpbyfhkqggpq9x5crfsy4vdxgs8853vrwb8dk7cdjpzh3z1alj"
+    "name": "dhall-bash-1.0.38-x86_64-macos.tar.bz2.zip",
+    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.40.0/dhall-bash-1.0.38-x86_64-macos.tar.bz2.zip",
+    "hash": "0d6j1rlylhdg7gklhsybf9j2rnmzaxjj0rmqna7r4xidy32ygf2k"
+  },
+  "dhall-csv-linux": {
+    "name": "dhall-csv-1.0.0-x86_64-linux.tar.bz2",
+    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.40.0/dhall-csv-1.0.0-x86_64-linux.tar.bz2",
+    "hash": "0plffqxkvhydmswnh3z0wy3jn6q5l4n9m0x5gch39yq57smwwa13"
+  },
+  "dhall-csv-darwin": {
+    "name": "dhall-csv-1.0.0-x86_64-macos.tar.bz2.zip",
+    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.40.0/dhall-csv-1.0.0-x86_64-macos.tar.bz2.zip",
+    "hash": "1fljvmz137bn7lvhm80fbx08pxvg3dxsnjn6may6qkp3sc414vvs"
   },
   "dhall-docs-linux": {
-    "name": "dhall-docs-1.0.6-x86_64-linux.tar.bz2",
-    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.39.0/dhall-docs-1.0.6-x86_64-linux.tar.bz2",
-    "hash": "0b7ypabfn1vlv8i9g3g89jnzxrd7x2iz35cdvnahla867aajwzjn"
+    "name": "dhall-docs-1.0.7-x86_64-linux.tar.bz2",
+    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.40.0/dhall-docs-1.0.7-x86_64-linux.tar.bz2",
+    "hash": "0pdppsgb7x8fmhsclbvl3cl0mbs9hziwip5rxbwmrdnhf96sdflw"
   },
   "dhall-docs-darwin": {
-    "name": "dhall-docs-1.0.6-x86_64-macos.tar.bz2",
-    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.39.0/dhall-docs-1.0.6-x86_64-macos.tar.bz2",
-    "hash": "1800c3n1gjmpjqvzah1gj40zqap8fdpvjjq3ks347bdpq8ia31bj"
+    "name": "dhall-docs-1.0.7-x86_64-macos.tar.bz2.zip",
+    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.40.0/dhall-docs-1.0.7-x86_64-macos.tar.bz2.zip",
+    "hash": "0rwlmf9lm5fk0628nbl1bczgvqh5w0ny24yqslr37j8avnfgf95j"
   },
   "dhall-json-linux": {
-    "name": "dhall-json-1.7.7-x86_64-linux.tar.bz2",
-    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.39.0/dhall-json-1.7.7-x86_64-linux.tar.bz2",
-    "hash": "1kqxh7kcbqyqq7sylw9gi8mhb2j6v86vfw33s2150gznf5j6afix"
+    "name": "dhall-json-1.7.8-x86_64-linux.tar.bz2",
+    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.40.0/dhall-json-1.7.8-x86_64-linux.tar.bz2",
+    "hash": "0z2yyj9r75q6584y9501bi45kpc67w59chfb6d6nsdgg97kcm5sj"
   },
   "dhall-json-darwin": {
-    "name": "dhall-json-1.7.7-x86_64-macos.tar.bz2",
-    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.39.0/dhall-json-1.7.7-x86_64-macos.tar.bz2",
-    "hash": "0snpl5baw9yazz11a5h8jcbcgix2wdp8ijasrx7xlgjlhgg1nk3k"
+    "name": "dhall-json-1.7.8-x86_64-macos.tar.bz2.zip",
+    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.40.0/dhall-json-1.7.8-x86_64-macos.tar.bz2.zip",
+    "hash": "1kpphf8qq5bff487y2psxzgyvd2r7y6k3iqxwndawny24im6cxmm"
   },
   "dhall-lsp-server-linux": {
-    "name": "dhall-lsp-server-1.0.15-x86_64-linux.tar.bz2",
-    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.39.0/dhall-lsp-server-1.0.15-x86_64-linux.tar.bz2",
-    "hash": "1gk75g42r11sr8v3w38n5yqs935s09fays7lzrv92pia469giyg5"
+    "name": "dhall-lsp-server-1.0.16-x86_64-linux.tar.bz2",
+    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.40.0/dhall-lsp-server-1.0.16-x86_64-linux.tar.bz2",
+    "hash": "1srbh85ksajs9kbvdkybkjhlci0gwsi700ydlgqxl4cfc873sdca"
   },
   "dhall-lsp-server-darwin": {
-    "name": "dhall-lsp-server-1.0.15-x86_64-macos.tar.bz2",
-    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.39.0/dhall-lsp-server-1.0.15-x86_64-macos.tar.bz2",
-    "hash": "0n3m3axl3vny7b7pv4v5wcsi8npcw86xyvfk84fbp04y64n8x4yn"
+    "name": "dhall-lsp-server-1.0.16-x86_64-macos.tar.bz2.zip",
+    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.40.0/dhall-lsp-server-1.0.16-x86_64-macos.tar.bz2.zip",
+    "hash": "10633ki67sdlgv4aan87mqnrv8knqx6yq5mga5zr71xbz0iggcnb"
   },
   "dhall-nix-linux": {
-    "name": "dhall-nix-1.1.21-x86_64-linux.tar.bz2",
-    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.39.0/dhall-nix-1.1.21-x86_64-linux.tar.bz2",
-    "hash": "06ziwdk42s2gim167jl1kp359f2cnwmlh67gmggsijflql2q9i41"
+    "name": "dhall-nix-1.1.22-x86_64-linux.tar.bz2",
+    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.40.0/dhall-nix-1.1.22-x86_64-linux.tar.bz2",
+    "hash": "1nskhf6jy8xf17vk2n9vm78r8z0d7cxh2g3d6rm5vwx8a0jmdcf2"
   },
   "dhall-nix-darwin": {
-    "name": "dhall-nix-1.1.21-x86_64-macos.tar.bz2",
-    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.39.0/dhall-nix-1.1.21-x86_64-macos.tar.bz2",
-    "hash": "00nwffqw1cc7spa3nz4w6avn99rciyyw0dycm81iyddfayvzqs46"
+    "name": "dhall-nix-1.1.22-x86_64-macos.tar.bz2.zip",
+    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.40.0/dhall-nix-1.1.22-x86_64-macos.tar.bz2.zip",
+    "hash": "14qgf4yvdicinq63lzabcflh11amwpx3zly44f34f9898widgz6i"
   },
   "dhall-nixpkgs-linux": {
-    "name": "dhall-nixpkgs-1.0.5-x86_64-linux.tar.bz2",
-    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.39.0/dhall-nixpkgs-1.0.5-x86_64-linux.tar.bz2",
-    "hash": "0w38zybj34clbkyad0qzkbapbzyyf14av2qwrnsv4kv6jrnjkk00"
+    "name": "dhall-nixpkgs-1.0.6-x86_64-linux.tar.bz2",
+    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.40.0/dhall-nixpkgs-1.0.6-x86_64-linux.tar.bz2",
+    "hash": "10f61s0i8gdklbsgiwa1ddrc1slkw2jsh2zphcjddj7yl86sa8gm"
   },
   "dhall-openapi-linux": {
-    "name": "dhall-openapi-1.0.1-x86_64-linux.tar.bz2",
-    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.39.0/dhall-openapi-1.0.1-x86_64-linux.tar.bz2",
-    "hash": "0lwqsy4n06fifq0xpnijdwwz3rz06h875fhmcwgwldajd26cyzj0"
+    "name": "dhall-openapi-1.0.2-x86_64-linux.tar.bz2",
+    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.40.0/dhall-openapi-1.0.2-x86_64-linux.tar.bz2",
+    "hash": "010byhgw5as84g20jknks3rs9hn70jcq0q46pjn8kvh49nd769pq"
   },
   "dhall-openapi-darwin": {
-    "name": "dhall-openapi-1.0.1-x86_64-macos.tar.bz2",
-    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.39.0/dhall-openapi-1.0.1-x86_64-macos.tar.bz2",
-    "hash": "0rr4qa841c4b920r78a2pwjmyxv04bwqlncg8w35rlfcwwfm8z6q"
+    "name": "dhall-openapi-1.0.2-x86_64-macos.tar.bz2.zip",
+    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.40.0/dhall-openapi-1.0.2-x86_64-macos.tar.bz2.zip",
+    "hash": "0gdfyikywpxgs43l1nlmh87ykf81gvsk3hrw1zzbdxc28yh589ww"
+  },
+  "dhall-toml-linux": {
+    "name": "dhall-toml-1.0.0-x86_64-linux.tar.bz2",
+    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.40.0/dhall-toml-1.0.0-x86_64-linux.tar.bz2",
+    "hash": "0h0vivk6mhl42ndw7a0yic7vi3wc6w85ysjlv1ryyz7vdgs2rb8m"
+  },
+  "dhall-toml-darwin": {
+    "name": "dhall-toml-1.0.0-x86_64-macos.tar.bz2.zip",
+    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.40.0/dhall-toml-1.0.0-x86_64-macos.tar.bz2.zip",
+    "hash": "1d8wdllm580rqnbm7aciclyil2q748mv9s1gd4a880gdk931902g"
   },
   "dhall-yaml-linux": {
-    "name": "dhall-yaml-1.2.7-x86_64-linux.tar.bz2",
-    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.39.0/dhall-yaml-1.2.7-x86_64-linux.tar.bz2",
-    "hash": "1mqjjgg3n6nsr4fj69m4vashwv0l9fxn7f2j47bidi8d1kji4a11"
+    "name": "dhall-yaml-1.2.8-x86_64-linux.tar.bz2",
+    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.40.0/dhall-yaml-1.2.8-x86_64-linux.tar.bz2",
+    "hash": "1kgc1bsqqnzw67jg4mf5jafb8p87phzq1fich8984fyrdyr536rj"
   },
   "dhall-yaml-darwin": {
-    "name": "dhall-yaml-1.2.7-x86_64-macos.tar.bz2",
-    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.39.0/dhall-yaml-1.2.7-x86_64-macos.tar.bz2",
-    "hash": "0gicaymmwzqf8j8f1dvkdsdplxn0sfm5lgfbgq8phxhbpc8lh0gn"
+    "name": "dhall-yaml-1.2.8-x86_64-macos.tar.bz2.zip",
+    "url": "https://github.com/dhall-lang/dhall-haskell/releases/download/1.40.0/dhall-yaml-1.2.8-x86_64-macos.tar.bz2.zip",
+    "hash": "08mj1qgvkwp2a6xbxidx9b5zrh2ygg34rfria071ym6wsj1mj4yk"
   }
 }
