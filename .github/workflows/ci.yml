@@ -15,5 +15,5 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: cachix/install-nix-action@v12
+      - uses: cachix/install-nix-action@v16
       - run: ./test.sh
