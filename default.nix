@@ -28,4 +28,8 @@
   dhall-docs-simple = import ./dhall-docs-simple.nix {
     inherit pkgs;
   };
+
+  dhall-csv-simple = import ./dhall-csv-simple.nix {
+    inherit pkgs;
+  };
 }
