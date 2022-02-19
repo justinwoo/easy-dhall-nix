@@ -6,15 +6,15 @@ Derivations for easily downloading Dhall binaries and putting them to use.
 
 You can get an appropriate nix-shell with the binaries installed by first testing this with:
 
-```
-nix-shell
+```shell-session
+> nix-shell
 ```
 
 ## Installation
 
-You might choose to simply copy the derivations from this repository, or you can fetch the git/Github repo using the various helpers:
+You might choose to simply copy the derivations from this repository, or you can fetch the git/GitHub repo using the various helpers:
 
-```
+```shell-session
 > nix repl
 nix-repl> pkgs = import ./nixpkgs.nix {}
 
@@ -37,8 +37,8 @@ The derivations here have been tested by others to work on NixOS. If you have pr
 
 To update, run
 
-```
-./fetch.py
+```shell-session
+> ./fetch.py
 ```
 
 from the root of this repository.
