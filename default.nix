@@ -1,4 +1,4 @@
-{ pkgs ? import ./nixpkgs.nix {} }:
+{ pkgs ? import ./nixpkgs.nix { } }:
 
 {
   dhall-simple = import ./dhall-simple.nix {
@@ -30,6 +30,10 @@
   };
 
   dhall-csv-simple = import ./dhall-csv-simple.nix {
+    inherit pkgs;
+  };
+
+  dhall-toml-simple = import ./dhall-toml-simple.nix {
     inherit pkgs;
   };
 }

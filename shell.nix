@@ -16,5 +16,6 @@ in
       dhall-lsp-simple
       dhall-docs-simple
       dhall-csv-simple
+      dhall-toml-simple
     ];
   }
