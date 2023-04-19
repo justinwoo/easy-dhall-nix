@@ -38,7 +38,7 @@ def update_nixpkgs(lockfile_path, new_hash):
 def prefetch_binaries(release):
     res = []
     for a in release['assets']:
-        if "linux" in a['name'] or "macos" in a['name']:
+        if "linux" in a['name'] or "macOS" in a['name']:
             print(a['name'], file=sys.stderr)
             hash = sub.check_output([
                 "nix-prefetch-url", a['browser_download_url']
