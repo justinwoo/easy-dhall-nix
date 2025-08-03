@@ -11,8 +11,8 @@ pkgs.stdenv.mkDerivation rec {
 
   src = if pkgs.stdenv.isDarwin
   then pkgs.fetchurl {
-    url = release.${"${attrName}-darwin"}.url;
-    sha256 = release.${"${attrName}-darwin"}.hash;
+    url = release.${"${attrName}-darwin${if pkgs.stdenv.isAarch64 then "-aarch64" else ""}"}.url;
+    sha256 = release.${"${attrName}-darwin${if pkgs.stdenv.isAarch64 then "-aarch64" else ""}"}.hash;
   }
   else pkgs.fetchurl {
     url = release.${"${attrName}-linux"}.url;
